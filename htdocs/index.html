@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>BioWeb一些例子</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<!-- 本网页说明部分，你的作业不用保留本部分 -->
+
+<div style="display:none;color:red" id="alert">
+检测到本示例程序被提交至服务器，请删除本demo后重新提交你的作品 <a href="http://binfo.qs1401.com/?action=back">去上传作业</a>
+</div>
+
+<h2>说明</h2>
+<p>
+BioWeb致力于快速搭建Apache+Python环境，Author: ChenYuan<br>
+本网页在C:\BioWeb\htdocs目录中，可以放心地删除本demo，将你的作业放入这个文件夹<br>
+</p>
+<div id="tip">
+Tip:<br>
+<font color="red">
+在测试时请确保地址栏以 <a href="http://127.0.0.1/">http://127.0.0.1</a> 开头，否则无法测试你的Python程序<br>
+请一定使用相对路径，否则提交作业至服务器后可能出问题
+</font><br>
+</div>
+
+<script>
+if(window.location.host=="b.qs1401.com"){
+    document.getElementById("alert").style.display="block";
+    document.getElementById("tip").style.display="none";
+}
+</script>
+<hr>
+
+<h2>第一个例子--Say hello</h2>
+<p>
+<pre>
+说明：
+    简单的一个表单，有两个input：xing和ming
+    提交后Python将输入获得后输出
+    
+    本Python程序可以使用IDLE运行，支持输入输出中文(如果中文乱码请修改httpd.conf)
+</pre>
+</p>
+<!-- 注意复制表单 -->
+<form action="demo1.py" method="post">
+你的姓：<input name="xing"><br>
+你的名：<input name="ming"><br>
+<input type="submit">
+</form>
+<hr>
+
+<h2>第二个例子--统计ATCG</h2>
+<p>
+<pre>
+说明：
+    提交一段DNA进行ATCG个数的统计
+</pre>
+</p>
+<!-- 注意复制表单 -->
+<form action="demo2.py" method="post">
+输入DNA：<input name="dna"><br>
+<input type="submit">
+</form>
+<hr>
+
+<h2>第三个例子--输出好看的网页</h2>
+<p>
+<pre>
+说明：
+    只需要点击，这里没有表单
+</pre>
+</p>
+<!-- 这就是个超链接 -->
+<a href="demo3/demo3.py">戳我戳我</a>
+<hr>
+
+<h2>第四个例子--使用BioPython</h2>
+<p>
+<pre>
+说明：
+    提交一段DNA进行转录翻译
+    HTML中写了段Javascript提供Example
+</pre>
+</p>
+<!-- 注意复制表单 -->
+<a name="demo4"></a>
+<form action="demo4.py" method="post">
+输入DNA(<a href="#demo4" onclick="document.getElementById('demo4').value='ATGATAAATATTTTTTCTATTTTTGACCCTACTACTAATTATTATCTATCATTAAATTGATTAAGAATAT'">Example</a>)：<input name="dna" id="demo4" value=""><br>
+<input type="submit">
+</form>
+<hr>
+
+<h2>第五个例子--天气预报爬虫</h2>
+<p>
+<pre>
+说明：
+    只需要点击，这里没有表单
+    这个例子只会爬杭州的明天天气预报
+    也许你可以先根据用户的IP查到用户的来源省市，给出ta所在城市的天气预报呢
+</pre>
+</p>
+<!-- 这就是个超链接 -->
+<a href="demo5.py">戳我戳我</a>
+<hr>
+
+<h2>第六个例子--SeqToolSet</h2>
+<p>
+</p>
+<!-- 这就是个超链接 -->
+<a href="demo6/index.html">点进去看看</a>
+<hr>
+
+</body>
+</html>

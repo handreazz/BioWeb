@@ -1,0 +1,56 @@
+form{
+	text-align: center;
+}
+
+.form1{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 75%;
+	height: 250px;
+	font-family: inherit;
+	font-size: 14px;
+	letter-spacing:1.5px;
+}
+
+.jumbotron-head {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: white;
+  background: linear-gradient(135deg, rgb(39, 27, 56), rgb(86, 61, 124), rgb(121, 82, 179));
+}
+.jumbotron-head h1,
+.jumbotron-head .h1 {
+  color: inherit;
+}
+.jumbotron-head p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron-head > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron-head,
+.container-fluid .jumbotron-head {
+  border-radius: 6px;
+}
+.jumbotron-head .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron-head {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron-head,
+  .container-fluid .jumbotron-head {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron-head h1,
+  .jumbotron-head .h1 {
+    font-size: 63px;
+  }
+}
+

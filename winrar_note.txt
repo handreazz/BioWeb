@@ -1,0 +1,21 @@
+;下面的注释包含自解压脚本命令
+
+Path=C:\BioWeb\
+SavePath
+Setup=C:\BioWeb\_点我安装.bat
+Overwrite=2
+License=生物信息学BioWeb快速搭建
+{
+本自解压程序会快速地安装好Apache，
+
+并默认支持Python作为网站的后端处理程序
+
+
+请不要修改解压目录，本程序必须解压到C:\BioWeb
+
+
+安装好后请把你的网站HTML和写好的python程序都放在C:\BioWeb\htdocs目录下
+
+
+Author: Chen Yuan
+}

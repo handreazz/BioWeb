@@ -1,2 +1,3 @@
 # BioWeb
-One key deploy for Apache+Python-cgi+biopython
+
+快速部署Apache+Python-cgi开发环境
