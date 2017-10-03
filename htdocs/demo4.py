@@ -1,10 +1,10 @@
 #!C:/BioWeb/python.exe
-#coding:utf-8
+# coding: utf-8
 import cgi
 from Bio.Seq import Seq
 from Bio.Alphabet import IUPAC
 
-print("Content-type:text/html;charset=utf-8\r\n\r\n")#这一步必须写好，请一定保留这一行
+print("Content-type:text/html;charset=utf-8\r\n\r\n")
 
 #第一步：获得用户的输入
 DNA = cgi.FieldStorage().getvalue('dna',"ATGGCCATT")#从用户提交的表单中得到<input name="dna">的值，复制给DNA这个变量，如果用户没有输入(你在IDLE中测试)，就会得到后面那个字符串

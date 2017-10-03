@@ -1,5 +1,5 @@
 #!C:/BioWeb/python.exe
-#coding:utf-8
+# coding: utf-8
 import cgi
 
 print("Content-type:text/html;charset=utf-8\r\n\r\n")

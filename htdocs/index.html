@@ -8,13 +8,14 @@
 <!-- 本网页说明部分，你的作业不用保留本部分 -->
 
 <div style="display:none;color:red" id="alert">
+<!-- 如果你直接把这个示例程序上传就会显示这个警告哟~ -->
 检测到本示例程序被提交至服务器，请删除本demo后重新提交你的作品 <a href="http://binfo.qs1401.com/?action=back">去上传作业</a>
 </div>
 
 <h2>说明</h2>
 <p>
 BioWeb致力于快速搭建Apache+Python环境，Author: ChenYuan<br>
-本网页在C:\BioWeb\htdocs目录中，可以放心地删除本demo，将你的作业放入这个文件夹<br>
+本网页在C:\BioWeb\htdocs目录中，你可以放心地删除本demo，将你的作业放入这个文件夹<br>
 </p>
 <div id="tip">
 Tip:<br>
@@ -24,12 +25,6 @@ Tip:<br>
 </font><br>
 </div>
 
-<script>
-if(window.location.host=="b.qs1401.com"){
-    document.getElementById("alert").style.display="block";
-    document.getElementById("tip").style.display="none";
-}
-</script>
 <hr>
 
 <h2>第一个例子--Say hello</h2>
@@ -111,5 +106,14 @@ if(window.location.host=="b.qs1401.com"){
 <a href="demo6/index.html">点进去看看</a>
 <hr>
 
+<!-- 检测一下是不是在服务器上运行，如果是显示警告 -->
+<script>
+if(window.location.host=="b.qs1401.com"){
+    document.getElementById("alert").style.display="block";
+    document.getElementById("tip").style.display="none";
+}
+</script>
+
 </body>
+
 </html>
